@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th = "http://www.thymeleaf.org">
+
+<head>
+    <title>
+        Thymeleaf Demo
+    </title>
+
+    <!-- Reference CSS file -->
+    <link rel = "stylesheet" th:href="@{/css/helloworld-process.css}" >
+</head>
+
+<body>
+
+Hello World from Spring !
+
+<br><br>
+
+Student name : <span th:text="${param.studentName}" />
+<br><br>
+Student age : <span th:text="${param.age}" />
+
+</body>
+
+</html>
