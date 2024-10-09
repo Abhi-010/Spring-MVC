@@ -5,10 +5,17 @@
     <title>
         Hello World - Input Form
     </title>
+
+    <style>
+        input[type='text'] { font-size: 24px;}
+        input[type='submit']{font-size: 24px;}
+    </style>
 </head>
 
 <body>
-    <form th:action="@{/processForm}" method = "GET">
+
+    <form th:action="@{/processFormVersionThree}" method = "GET">
+
         <input type = "text" name = "studentName" placeholder = "what's your name ? " />
         <br><br>
         <input type = "text" name = "age" placeholder="what's your age ?" />

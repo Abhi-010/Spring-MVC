@@ -6,19 +6,22 @@
     <title>
         Thymeleaf Demo
     </title>
+
     <!-- Reference CSS file -->
-    <link rel = "stylesheet" th:href="@{/css/helloword-process.css}" >
+    <link rel = "stylesheet" th:href="@{/css/demo.css}" >
+
 </head>
 
 <body>
 
-Hello World from Spring !
+Hello world from spring
 
 <br><br>
-
 Student name : <span th:text="${param.studentName}" />
+
 <br><br>
-Student age : <span th:text="${param.age}" />
+
+The message : <span th:text="${message}" />
 
 </body>
 
